@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Inter&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: #0a0a14;
+  color: #d4af37;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+/* Scrollbar for sidebar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0a14;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #bfa75a88;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #bfa75a;
+}
+
+/* Glow animation for input focus */
+.glow-focus:focus {
+  outline: none;
+  box-shadow:
+    0 0 8px 2px #d4af37cc,
+    inset 0 0 8px 2px #d4af37cc;
+  transition: box-shadow 0.3s ease-in-out;
+}
